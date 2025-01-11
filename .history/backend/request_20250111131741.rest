@@ -1,0 +1,21 @@
+GET http://localhost:5002/users
+
+###
+POST http://localhost:5002/buku/
+Content-Type: application/json
+
+{
+    "judul_buku": "cerita rakyat",
+    "penerbit": "gramedia",
+    "stok": "20"
+}
+
+###
+POST http://localhost:5002/peminjaman/
+Content-Type: application/json
+
+{
+    "tanggal_peminjaman": "10/01/2025",
+    "tanggal_batas": "11/01/2025",
+    "status_peminjaman": "Dipinjam"
+}

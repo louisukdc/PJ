@@ -1,0 +1,62 @@
+GET http://localhost:5002/users
+
+###
+POST http://localhost:5002/buku/
+Content-Type: application/json
+
+{
+    "judul_buku": "cerita rakyat",
+    "penerbit": "gramedia",
+    "stok": "20"
+}
+
+###
+POST http://localhost:5002/peminjaman/
+Content-Type: application/json
+
+{
+    "tanggal_peminjaman": "15/01/2025",
+    "tanggal_batas": "15/01/2025",
+    "status_peminjaman": "Dipinjam"
+}
+
+###
+POST http://localhost:5002/pengembalian/
+Content-Type: application/json
+
+{
+    "tanggal_pengembalian": "18/01/2025",
+    "denda": "2000"
+}
+
+###
+PATCH http://localhost:5002/pengembalian/1
+Content-Type: application/json
+
+{
+    "tanggal_pengembalian": "18/01/2025",
+    "denda": "2000"
+}
+
+###
+POST http://localhost:5002/Anggota/
+Content-Type: application/json
+
+{
+    "nama_anggota": "Agung",
+    "alamat": "Jl. Manyar",
+    "no_telepon": "0123477"
+}
+
+###
+PATCH  http://localhost:5002/Anggota/1
+Content-Type: application/json
+
+{
+    "nama_anggota": "Santi",
+    "alamat": "Jl. Manyar 11",
+    "no_telepon": "01234997"
+}
+
+###
+DELETE http://localhost:5002/Anggota/2

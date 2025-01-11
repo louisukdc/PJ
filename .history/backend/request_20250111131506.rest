@@ -1,0 +1,11 @@
+GET http://localhost:5002/users
+
+###
+POST http://localhost:5002/buku/
+Content-Type: application/json
+
+{
+    "judul_buku": "cerita rakyat",
+    "penerbit": "gramedia",
+    "stok": "20"
+}
